@@ -1,0 +1,35 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Iletisim>
+@{
+    ViewBag.Title = "MesajListesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>İletişim Mesaj Listesi</h3>
+<br />
+<table class="table table-bordered table-hover table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>KULLANICI ADI SOYADI</th>
+        <th>KULLANICI MAİLİ</th>
+        <th>KULLANICININ MESAJ KONUSU</th>
+        <th>GÖNDERİLEN MESAJ</th>
+        <th>SİL</th>
+    
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.AdSoyad</td>
+            <td>@item.Mail</td>
+            <td>@item.Konu</td>
+            <td>@item.Mesaj</td>
+            <td><a href="/Admin/MesajSil/@item.ID" class="btn btn-danger">Sil</a></td>
+
+        </tr>
+    }
+
+</table>
+

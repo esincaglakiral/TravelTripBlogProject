@@ -1,0 +1,23 @@
+﻿@model TravelTripProje.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "YeniBlog";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Blog Ekleme Formu</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", placeholder = "Yeni bloğunuz için uygun bir başlık giriniz" })
+    <br />
+    @Html.LabelFor(x => x.Tarih)
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control", placeholder = "gg.aa.yyyy formatında giriniz" })
+    <br />
+    @Html.LabelFor(x => x.BlogImage)
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control", placeholder = "örnek: https://i.hizliresim.com/b18gpcn.jpg formatında bir image url giriniz" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control", placeholder = "Blog yazısını giriniz" })
+    <br />
+    <button class="btn btn-primary">Blog Kaydet</button>
+</form>

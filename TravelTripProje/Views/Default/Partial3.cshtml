@@ -1,0 +1,20 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Blog>
+
+<div class="padding">
+    <h4>En Popüler 10 Blog</h4>
+    <ul class="list list-pad">
+        @{
+            int i = 0; // Sayacı sıfırlarım
+        }
+        @foreach (var item in Model)
+        {
+            if (i >= 10) // Eğer sayac 10 veya daha fazla ise döngüyü kıracağım
+            {
+                break;
+            }
+            <li class="list-bg" style="padding:5px;"><span>@(++i). </span><a href="/Blog/BlogDetay/@item.ID">@item.Baslik</a></li>
+        }
+    </ul>
+    <a href="/Blog/" class="link1">Daha Fazlasını Görüntüle</a>
+</div>
