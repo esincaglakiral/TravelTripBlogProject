@@ -16,6 +16,13 @@ Mehabalar, bu proje Blog, Blog bilgileri, Yorum bilgileri ve Kullanıcı Admin i
 gibi bir çok teknoloji kullanılmıştır.
 -------------------------------------------------------------------------------------
 
+| Login Sayfası Genel Görünüm |
+|-----------------|
+
+![GirişYap](https://github.com/esincaglakiral/TravelTripBlogProject/assets/68962573/e14f7540-1752-44f9-a2e6-9a11106d5941)
+
+-------------------------------------------------------------------------------------
+
 | UI Tarafı Sayfa Genel Görünüm |
 |-----------------|
 | ![Anasayfa1](https://github.com/esincaglakiral/TravelTripBlogProject/assets/68962573/b1ca8e0f-52e2-487f-ac7b-83dc4dda0d97) |
